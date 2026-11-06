@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Небольшой каталог товаров DummyJSON с поиском по названию." />
+    <title>Каталог товаров — ДЗ №2</title>
+  </head>
+  <body>
+    <main class="catalog">
+      <header class="catalog-header">
+        <p class="eyebrow">ДЗ №2 · Веб-разработка</p>
+        <h1>Каталог товаров</h1>
+        <p class="description">Небольшая подборка на каждый день. Найдите то, что вам нужно.</p>
+      </header>
+
+      <section class="search-panel" aria-label="Поиск товаров">
+        <label for="search">Поиск по названию</label>
+        <input id="search" type="search" placeholder="Например, apple" autocomplete="off" />
+        <p class="search-hint">Поиск среди загруженных товаров DummyJSON</p>
+      </section>
+
+      <div class="results-heading">
+        <h2>Все товары</h2>
+        <span id="product-count" aria-live="polite"></span>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite">
+        <p id="status-message">Загрузка…</p>
+        <button id="retry-button" type="button" hidden>Попробовать снова</button>
+      </div>
+      <section id="product-list" class="product-grid" aria-label="Товары" aria-busy="true"></section>
+
+      <footer>Данные и фотографии — <a href="https://dummyjson.com/docs/products" target="_blank" rel="noreferrer">DummyJSON</a>. Цены указаны в долларах США.</footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
