@@ -25,9 +25,7 @@ npm run build
 npm run preview
 ```
 
-Для публикации загрузите содержимое `dist` на статический хостинг. Для подпапки GitHub Pages используйте `npm run build -- --base=/имя-репозитория/`.
+## Ссылки
 
-## Ссылки для сдачи
-
-- Сайт — ____________________
-- GitHub — ____________________
+- Сайт — https://artem-229.github.io/product-catalog/
+- GitHub — https://github.com/Artem-229/product-catalog
